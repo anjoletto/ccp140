@@ -17,6 +17,11 @@ class Pessoa{
             this->cpf = cpf;
         }
 
+        void setNome(string nome, string sobrenome){
+            this->nome = nome;
+            this->sobrenome = sobrenome;
+        }
+
         void setNome(string nome){
             this->nome = nome;    
         }
