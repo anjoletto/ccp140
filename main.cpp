@@ -1,5 +1,15 @@
 #include <iostream>
+#include "Pessoa.cpp"
+using namespace std;
 
 int main(){
-    std::cout << "hello, world\n";
+    Pessoa p;
+    p.setNome("Nome");
+    p.setSobrenome("Sobrenome");
+    p.setCPF(123456789);
+
+    cout << "Dados da pessoa" << endl;
+    cout << "Nome: " << p.getNome() << " " << p.getSobrenome() << endl;
+    cout << "CPF: " << p.getCPF() << endl;
+
 }
