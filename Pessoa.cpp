@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 #include "Data.cpp"
 #include "Endereco.cpp"
