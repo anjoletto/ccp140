@@ -8,15 +8,11 @@ int main(){
     Pessoa p("Pessoa", "Sobrenome",123456789, 9, 11, 2024, e);
     Funcionario f("Funcionario", "Sobrenome", 987654321, 18, 9, 2024, e, 10000, 1);
 
-    cout << "Dados da pessoa" << endl;
-    cout << "Nome: " << p.getNome() << " " << p.getSobrenome() << endl;
-    cout << "CPF: " << p.getCPF() << endl;
-    cout << "Data de nascimento: " << p.getNascimento() << endl;
-    cout << "Endereco: " << p.getEndereco() << endl;
+    Pessoa* pessoas[2];
+    pessoas[0] = &p;
+    pessoas[1] = &f;
 
-    cout << "Dados do funcionario" << endl;
-    cout << "Nome: " << f.getNome() << " " << f.getSobrenome() << endl;
-    cout << "CPF: " << f.getCPF() << endl;
-    cout << "Data de nascimento: " << f.getNascimento() << endl;
-    cout << "Endereco: " << f.getEndereco() << endl;
+    for(int i=0;i<2;i++){
+        pessoas[i]->print();
+    }
 }
