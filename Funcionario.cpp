@@ -10,4 +10,14 @@ class Funcionario: public Pessoa{
                double salario, int cadastro):
             Pessoa(nome, sobrenome, cpf, dia, mes, ano, endereco),
             salario{salario}, cadastro{cadastro}{}
+
+        virtual void print(){
+            cout << "Dados do funcionario" << endl;
+            cout << "Nome: " << this->getNome() << " " << this->getSobrenome() << endl;
+            cout << "CPF: " << this->getCPF() << endl;
+            cout << "Data de nascimento: " << this->getNascimento() << endl;
+            cout << "Endereco: " << this->getEndereco() << endl;
+            cout << "Salario: " << this->salario << endl;
+            cout << "Cadastro: " << this->cadastro << endl;
+        }
 };
